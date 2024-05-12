@@ -1,6 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import OneWay from './OneWay';
+
 import Journey from './Journey';
 
 const Home = () => {
@@ -30,14 +30,14 @@ const Home = () => {
                 <div className='flex items-center justify-center'>
                    <ul className='flex gap-8 items-center'>
                     {homeNav.map(trip => (
-                        <li key={trip.id} className=' p-2 border-2 border-indigo-600 hover:bg-[#3cabbe]'>
+                        <li key={trip.id} className=' p-2 border-2 rounded-lg border-indigo-600 hover:bg-[#031f24] hover:text-white'>
                           <NavLink to={trip.path}>{trip.name}</NavLink>
                         </li>
                     ))}
                    </ul>
                </div>
 
-               <OneWay/>
+               {/* <OneWay/> */}
 
                <Journey/>
 
