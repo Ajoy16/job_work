@@ -16,6 +16,7 @@ const FlightOffersTable = ({ flightOffers }) => {
               <th className="p-3 border-r border-b">Fare Basis</th>
               <th className="p-3 border-r border-b">Class</th>
               <th className="p-3 border-r border-b">Seat</th>
+              <th className="p-3 border-r border-b">Buy</th>
             </tr>
           </thead>
           <tbody >
@@ -32,7 +33,7 @@ const FlightOffersTable = ({ flightOffers }) => {
                         <td className="">{offer.fareBasis[0].join(', ')}</td>
                         <td className="">{offer.class[0].join(', ')}</td>
                         <td className="">{offer.seat[0].join(', ')}</td>
-
+                        <td className='relative pt-10'><button className="absolute top-1 right-0 p-1 border rounded-lg hover:bg-[#031f24] hover:text-white" >Buy Ticket</button></td>
                       </tr>
                     ))}
 

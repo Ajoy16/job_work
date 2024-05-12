@@ -37,7 +37,7 @@ const Navbar = () => {
 
 
     return (
-        <div className='flex items-center justify-between px-28 bg-gray-800'>
+        <div className='flex items-center justify-between px-16 bg-gray-800'>
             <div className='flex items-center gap-5 px-10'>  
               <ul className='hidden md:flex'>
                 {navItems.map(item => (
